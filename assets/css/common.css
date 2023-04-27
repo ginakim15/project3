@@ -1,0 +1,62 @@
+body{
+    background: #f1f1f1;
+    font-family: 'Gilroy','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+
+}
+.wrapper{
+    min-width: 320px;
+    max-width: 1025px;
+    margin: 0 auto;
+    background: #fff;
+}
+body.hidden{
+    overflow: hidden;
+}
+body.hidden::after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    z-index: 15;
+    content: '';
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+
+.gnb .nav-ad .swiper-slide .link-direct::after,
+.link-all::after{
+    background: url(../img/sp-etc.png) no-repeat center / cover;
+    background-size: 317px;
+}
+
+/* .header .logo a,
+.gnb .nav-top .nav-left .nav-btn{
+    background: url(../img/sp-top.png) no-repeat center / cover;
+    background-size: 180px;
+} */
+
+.dot{
+    position: relative;
+    margin-right: 5px;
+}
+.dot::after{
+    position: absolute;
+    top: 4px;
+    right: -8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+    /* z-index: 10000; */
+    content: '';
+}
